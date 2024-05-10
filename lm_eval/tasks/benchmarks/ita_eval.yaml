@@ -2,12 +2,18 @@ group: ita_eval
 task:
   # Natural Language Understanding
   - itacola
-  - squad_it
   - belebele_ita
   - news_sum
+  - haspeede2_hs
+  - haspeede2_stereo
+  - ironita_irony
+  - ironita_sarcasm
+  - sentipolc
   # Factual and Commonsense Knowledge
-  - truthfulqa_gen_ita
+  - truthfulqa_mc2_ita
   - arc_challenge_ita
+  - squad_it
+  - xcopa_it
   # Bias, Fairness
   - hatecheck_ita
   - ami_2020_misogyny
