@@ -21,8 +21,8 @@ MODEL="mii-community/zefiro-7b-base-ITA"
 echo "Starting $MODEL"
 lm_eval --model hf \
     --model_args pretrained=${MODEL},dtype=bfloat16 \
-    --tasks gente_rephrasing \
-    --batch_size auto \
+    --tasks haspeede2_hs,haspeede2_stereo,ironita_irony,ironita_sarcasm,sentipolc,truthfulqa_mc2_ita,xcopa_it \
+    --batch_size 1 \
     --limit 10 \
     --log_samples \
     --output_path $FAST/ita_eval/testing/$MODEL \
