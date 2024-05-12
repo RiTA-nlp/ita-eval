@@ -4,8 +4,6 @@ task:
   - itacola
   - belebele_ita
   - news_sum
-  - haspeede2_hs
-  - haspeede2_stereo
   - ironita_irony
   - ironita_sarcasm
   - sentipolc
@@ -14,7 +12,10 @@ task:
   - arc_challenge_ita
   - squad_it
   - xcopa_it
+  - hellaswag_ita
   # Bias, Fairness
+  - haspeede2_hs
+  - haspeede2_stereo
   - hatecheck_ita
   - ami_2020_misogyny
   - ami_2020_aggressiveness
