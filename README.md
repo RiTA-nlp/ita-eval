@@ -1,7 +1,7 @@
 # ItaEval
 
-[![Leaderboard](https://img.shields.io/badge/Leaderboard-yellow)](https://huggingface.co/spaces/RiTA-nlp/ita-eval)
-[![Technical Report](https://img.shields.io/badge/Report-green)](https://rita-nlp.org/)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-Space-yellow)](https://huggingface.co/spaces/RiTA-nlp/ita-eval)
+[![Technical Report](https://img.shields.io/badge/Report-pdf-green)](https://rita-nlp.org/)
 
 This repository contains the configuration and code utilities to run the ItaEval evaluation suite.
 
@@ -20,5 +20,5 @@ This repository contains the configuration and code utilities to run the ItaEval
   version      = {v0.4.0},
   doi          = {10.5281/zenodo.10256836},
   url          = {https://zenodo.org/records/10256836}
-} -->
-```
+} 
+``` -->
