@@ -1,7 +1,7 @@
 # ItaEval
 
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Space-yellow)](https://huggingface.co/spaces/RiTA-nlp/ita-eval)
-[![Technical Report](https://img.shields.io/badge/Report-pdf-green)](https://bit.ly/itaeval_tweetyita_v1)
+[![Technical Report](https://img.shields.io/badge/Report-v1-red)](https://bit.ly/itaeval_tweetyita_v1)
 
 This repository contains the configuration and code utilities to run the ItaEval evaluation suite.
 
