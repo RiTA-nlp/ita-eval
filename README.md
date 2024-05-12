@@ -5,7 +5,7 @@
 
 This repository contains the configuration and code utilities to run the ItaEval evaluation suite.
 
-- The repository is a fork of the [lm-eval-harness](https://github.com/EleutherAI/lm-evaluation-harness). Our last alignment happended on [1980a13](https://github.com/EleutherAI/lm-evaluation-harness/tree/1980a13c9d7bcdc6e2a19228c203f9f7834ac9b8).
+- The repository is a fork of the [lm-eval-harness](https://github.com/EleutherAI/lm-evaluation-harness). We last aligned on [1980a13](https://github.com/EleutherAI/lm-evaluation-harness/tree/1980a13c9d7bcdc6e2a19228c203f9f7834ac9b8).
 - The suite is backing a live leaderboard [HERE](https://huggingface.co/spaces/RiTA-nlp/ita-eval) 
 
 ## Exploring the Suite 
