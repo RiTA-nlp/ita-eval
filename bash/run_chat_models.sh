@@ -1,14 +1,14 @@
 #!/usr/bin/zsh
-#SBATCH --job-name=it_eval_chat            # Job name
+#SBATCH --job-name=chat_iteval            # Job name
 #SBATCH --output=logs/%A-%a.out             # Output file
 #SBATCH --partition=boost_usr_prod                  # Specify the partition name
 #SBATCH --nodes=1                        # Number of nodes
 #SBATCH --ntasks-per-node=1              # Number of tasks (processes) per node
 #SBATCH --cpus-per-task=8
-#SBATCH --gpus-per-node=2                # Number of tasks (processes) per node
+#SBATCH --gpus-per-node=4                # Number of tasks (processes) per node
 #SBATCH --time=16:00:00                   # Walltime limit (hh:mm:ss)
 #SBATCH --mem-per-gpu=32G
-#SBATCH --array=1-8
+#SBATCH --array=1-6
 
 export TOKENIZERS_PARALLELISM=false
 
@@ -29,12 +29,12 @@ BATCH_SIZE=1
 
 module load cuda
 
-accelerate launch -m lm_eval --model hf \
+srun accelerate launch -m lm_eval --model hf \
     --model_args pretrained=${MODEL},dtype=bfloat16 \
     --tasks ita_eval \
     --batch_size $BATCH_SIZE \
     --log_samples \
-    --output_path $FAST/ita_eval_v1/$MODEL \
-    --use_cache $FAST/ita_eval_v1/$MODEL \
+    --output_path $FAST/ita_eval_v2/ \
+    --use_cache $FAST/ita_eval_v2/cache/ \
     --cache_requests "true"
 
