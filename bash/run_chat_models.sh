@@ -8,7 +8,7 @@
 #SBATCH --gpus-per-node=4                # Number of tasks (processes) per node
 #SBATCH --time=16:00:00                   # Walltime limit (hh:mm:ss)
 #SBATCH --mem-per-gpu=32G
-#SBATCH --array=1-6
+#SBATCH --array=3
 
 export TOKENIZERS_PARALLELISM=false
 
@@ -22,6 +22,9 @@ MODELS=( \
     "mistralai/Mistral-7B-Instruct-v0.2" \
     "mii-community/zefiro-7b-sft-ITA" \
     "mii-community/zefiro-7b-dpo-ITA" \
+    "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA" \
+    "CohereForAI/aya-23-8B" \
+    "CohereForAI/aya-23-35B" \
 )
 
 MODEL=${MODELS[${SLURM_ARRAY_TASK_ID}]}
@@ -35,6 +38,6 @@ srun accelerate launch -m lm_eval --model hf \
     --batch_size $BATCH_SIZE \
     --log_samples \
     --output_path $FAST/ita_eval_v2/ \
-    --use_cache $FAST/ita_eval_v2/cache/ \
+    --use_cache $FAST/ita_eval_v2/cache/${MODEL//\//__} \
     --cache_requests "true"
 

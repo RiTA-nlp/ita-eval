@@ -17,6 +17,7 @@ source $FAST/lm_eval/bin/activate
 MODEL="g8a9/tweety-mistral-7b"
 MODEL="meta-llama/Meta-Llama-3-8B"
 MODEL="mii-community/zefiro-7b-base-ITA"
+MODEL="meta-llama/Meta-Llama-3-8B-Instruct"
 #for MODEL in ${MODELS[@]}; do
 echo "Starting $MODEL"
 lm_eval --model hf \
