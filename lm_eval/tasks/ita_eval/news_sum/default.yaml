@@ -1,4 +1,4 @@
-group: news_sum
+tag: news_sum
 training_split: train
 validation_split: null
 test_split: test

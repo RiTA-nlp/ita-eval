@@ -1,5 +1,5 @@
 task: sentipolc
-group:
+tag:
   - uinauil
 
 dataset_path: RiTA-nlp/UINAUIL

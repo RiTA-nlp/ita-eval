@@ -1,1 +1,3 @@
 -e .
+unidecode
+bert-score

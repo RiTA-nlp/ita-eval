@@ -1,6 +1,4 @@
 task: itacola
-group:
-  - ita_eval
 
 dataset_path: gsarti/itacola
 dataset_name: scores

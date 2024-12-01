@@ -1,5 +1,5 @@
 task: ami_2020_aggressiveness
-group:
+tag:
   - toxicity_ita
   - ami
 

@@ -1,4 +1,4 @@
-group:
+tag:
   - ai2_arc_ita
 task: arc_easy_ita
 dataset_path: RiTA-nlp/ai2_arc_ita
