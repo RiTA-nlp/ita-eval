@@ -32,21 +32,27 @@ lm_eval --model hf \
     --output_path "."
 ```
 
+### Add a model to the [Leaderboard](https://huggingface.co/spaces/RiTA-nlp/ita-eval)
+
+Follow these steps:
+1. Run the evaluation with the code above. You will end up with a folder containing a file starting with `results_`
+2. Copy and push that folder into this directory: https://huggingface.co/datasets/RiTA-nlp/ita-eval-results/
+3. Edit the [model_info.yaml](https://huggingface.co/datasets/RiTA-nlp/ita-eval-results/blob/main/model_info.yaml) file to add the information about the new model(s)
+4. Run [this script](https://huggingface.co/datasets/RiTA-nlp/ita-eval-results/blob/main/add_model_info.py) from the main directory of the `ita-eval-results` repository.
+5. Push the changes.
+
+Note, points 2 through 5 require having access to the results repository.
+
 ## Acknowledgments
 
 ItaEval and TweetyIta are the results of the joint effort of members of the [Risorse per la Lingua Italiana](https://rita-nlp.org/) community. We thank every member that dedicated their personal time to the sprints. We thank CINECA for providing the computational resources (ISCRA grant: HP10C3RW9F).
 
-<!-- ## Cite as
-
+## Cite
+```bibtex
+@inproceedings{attanasio2024itaeval,
+  title={ItaEval and TweetyIta: A New Extensive Benchmark and Efficiency-First Language Model for Italian},
+  author={Attanasio, Giuseppe and Delobelle, Pieter and La Quatra, Moreno and Santilli, Andrea and Savoldi, Beatrice},
+  booktitle={CLiC-it 2024: Tenth Italian Conference on Computational Linguistics, Date: 2024/12/04-2024/12/06, Location: Pisa, Italy},
+  year={2024}
+}
 ```
-@misc{eval-harness,
-  author       = {Gao, Leo and Tow, Jonathan and Abbasi, Baber and Biderman, Stella and Black, Sid and DiPofi, Anthony and Foster, Charles and Golding, Laurence and Hsu, Jeffrey and Le Noac'h, Alain and Li, Haonan and McDonell, Kyle and Muennighoff, Niklas and Ociepa, Chris and Phang, Jason and Reynolds, Laria and Schoelkopf, Hailey and Skowron, Aviya and Sutawika, Lintang and Tang, Eric and Thite, Anish and Wang, Ben and Wang, Kevin and Zou, Andy},
-  title        = {A framework for few-shot language model evaluation},
-  month        = 07,
-  year         = 2024,
-  publisher    = {Zenodo},
-  version      = {v0.4.0},
-  doi          = {10.5281/zenodo.10256836},
-  url          = {https://zenodo.org/records/10256836}
-} 
-``` -->
