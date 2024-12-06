@@ -1,12 +1,12 @@
 # ItaEval
 
+[![Webpage](https://img.shields.io/badge/Webpage-url-blue)](https://bit.ly/tweetyita-itaeval)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Space-yellow)](https://huggingface.co/spaces/RiTA-nlp/ita-eval)
-[![Technical Report](https://img.shields.io/badge/Report-v1-red)](https://bit.ly/itaeval_tweetyita_v1)
+[![Paper](https://img.shields.io/badge/Paper-CLiC_it-red)](https://clic2024.ilc.cnr.it/wp-content/uploads/2024/11/6_main_long.pdf)
 
 This repository contains the configuration and code utilities to run the ItaEval evaluation suite.
 
 - The repository is a fork of the [lm-eval-harness](https://github.com/EleutherAI/lm-evaluation-harness). We last aligned on [1980a13](https://github.com/EleutherAI/lm-evaluation-harness/tree/1980a13c9d7bcdc6e2a19228c203f9f7834ac9b8).
-- The suite is backing a live leaderboard [HERE](https://huggingface.co/spaces/RiTA-nlp/ita-eval) 
 
 ## Exploring the Suite 
 
