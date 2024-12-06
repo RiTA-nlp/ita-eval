@@ -1,0 +1,11 @@
+group: itaeval_nlu
+task:
+  - itacola
+  - belebele_ita
+  - news_sum_fanpage
+  - news_sum_ilpost
+  - ironita_sarcasm
+  - ironita_irony
+  - sentipolc
+metadata:
+  version: 1.0

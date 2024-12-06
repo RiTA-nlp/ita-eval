@@ -1,0 +1,11 @@
+group: itaeval_bfs
+task:
+  - haspeede2_hs
+  - haspeede2_stereo
+  - hatecheck_ita
+  - ami_2020_misogyny
+  - ami_2020_aggressiveness
+  - honest_ita
+  - gente_rephrasing
+metadata:
+  version: 1.0

@@ -1,0 +1,19 @@
+task: mmmlu_ita
+tag:
+  - cfk
+
+dataset_path: openai/MMMLU
+dataset_name: IT_IT
+
+test_split: test
+
+output_type: multiple_choice
+doc_to_text: "{{Question.strip()}}\nA. {{A}}\nB. {{B}}\nC. {{C}}\nD. {{D}}\nRisposta:"
+doc_to_choice: ["A", "B", "C", "D"]
+doc_to_target: Answer
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 0.0

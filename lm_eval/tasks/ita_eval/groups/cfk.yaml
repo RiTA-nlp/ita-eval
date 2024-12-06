@@ -1,0 +1,10 @@
+group: itaeval_cfk
+task:
+  - arc_challenge_ita
+  - arc_easy_ita
+  - squad_it
+  - xcopa_it
+  - hellaswag_ita
+  - mmmlu_ita # added in v1.1
+metadata:
+  version: 1.1
