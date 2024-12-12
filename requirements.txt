@@ -1,3 +1,4 @@
 -e .
 unidecode
 bert-score
+hf_transfer

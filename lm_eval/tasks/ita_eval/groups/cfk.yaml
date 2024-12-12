@@ -3,6 +3,7 @@ task:
   - arc_challenge_ita
   - arc_easy_ita
   - squad_it
+  - truthfulqa_mc2_ita
   - xcopa_it
   - hellaswag_ita
   - mmmlu_ita # added in v1.1
