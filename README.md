@@ -2,7 +2,7 @@
 
 [![Webpage](https://img.shields.io/badge/Webpage-url-blue)](https://bit.ly/tweetyita-itaeval)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Space-yellow)](https://huggingface.co/spaces/RiTA-nlp/ita-eval)
-[![Paper](https://img.shields.io/badge/Paper-CLiC_it-red)](https://clic2024.ilc.cnr.it/wp-content/uploads/2024/11/6_main_long.pdf)
+[![Paper](https://img.shields.io/badge/Paper-CLiC_it-red)](https://aclanthology.org/2024.clicit-1.6/)
 
 This repository contains the configuration and code utilities to run the ItaEval evaluation suite.
 
